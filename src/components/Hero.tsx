@@ -1,0 +1,116 @@
+import logoHeader from "@/assets/logo_header.svg";
+import bacLogo from "@/assets/bac_logo.png";
+import sabianaLogo from "@/assets/sabiana_logo.png";
+import symbolDecorative from "@/assets/symbol_decorative.svg";
+import buttonArrow from "@/assets/button_arrow.svg";
+import eyeIcon from "@/assets/eye_icon.svg";
+import heroImage from "@/assets/hero_technician.jpg";
+
+const navItems = ["USLUGE", "BRENDOVI", "O NAMA", "KLIJENTI", "GALERIJA"];
+
+export function Hero() {
+  return (
+    <section
+      className="relative min-h-screen w-full overflow-hidden font-sans text-white"
+      style={{ backgroundColor: "#1B2669" }}
+    >
+      {/* Top bar */}
+      <header className="relative z-20 flex items-center justify-between pl-10 pr-0">
+        <a href="/" className="py-7">
+          <img src={logoHeader} alt="Balticool" className="h-9 w-auto" />
+        </a>
+
+        <nav className="hidden items-center gap-10 lg:flex">
+          {navItems.map((item) => (
+            <a
+              key={item}
+              href="#"
+              className="text-[13px] font-medium tracking-[0.15em] text-white/90 transition-colors hover:text-[#DCF959]"
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+
+        <a
+          href="#kontakt"
+          className="group flex items-center gap-4 self-stretch border-l border-white/15 px-10 py-7 text-[13px] font-semibold tracking-[0.15em] text-white transition-colors hover:bg-white/5"
+        >
+          KONTAKTIRAJTE NAS
+          <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+        </a>
+      </header>
+
+      {/* Main grid */}
+      <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,640px)]">
+        {/* Left content */}
+        <div className="relative z-10 flex flex-col px-10 pb-20 pt-4 lg:pt-2">
+          {/* Authorized service badge */}
+          <div className="flex items-center gap-4">
+            <p className="text-[11px] font-medium leading-[1.5] tracking-[0.15em] text-white/85">
+              OVLAŠĆENI SERVIS<br />BALTIMORE AIRCOIL<br />&amp; SABIANA
+            </p>
+            <img src={bacLogo} alt="Baltimore Aircoil" className="h-11 w-11" />
+            <img src={sabianaLogo} alt="Sabiana" className="h-11 w-11" />
+          </div>
+
+          {/* Headline area */}
+          <div className="mt-32 max-w-[640px]">
+            <h1 className="text-white font-semibold leading-[1.05] tracking-[-0.02em] text-[64px]">
+              Standard pouzdanosti<br />u industrijskom<br />hlađenju
+            </h1>
+
+            <p className="mt-8 max-w-[480px] text-[15px] leading-[1.7] text-white/75">
+              Stručan servis, održavanje i tehnička podrška za industrijske
+              rashladne i HVAC sisteme. Pouzdan rad opreme, manji zastoji
+              i dugoročna efikasnost sistema.
+            </p>
+
+            {/* CTAs */}
+            <div className="mt-10 flex flex-wrap items-center gap-4">
+              <a
+                href="#ponuda"
+                className="group inline-flex items-center justify-between gap-10 px-7 py-4 text-[14px] font-semibold transition-transform hover:-translate-y-0.5"
+                style={{ backgroundColor: "#DCF959", color: "#1B2669" }}
+              >
+                Zatražite ponudu
+                <img src={buttonArrow} alt="" className="h-4 w-auto transition-transform group-hover:translate-x-1" />
+              </a>
+
+              <a
+                href="#vise"
+                className="group inline-flex items-center justify-between gap-10 border border-white/40 px-7 py-4 text-[14px] font-semibold text-white transition-colors hover:bg-white/5"
+              >
+                Saznajte više
+                <img src={eyeIcon} alt="" className="h-4 w-auto" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Right hero image */}
+        <div className="relative h-[420px] lg:h-auto lg:min-h-[760px]">
+          <img
+            src={heroImage}
+            alt="Balticool tehničar pored industrijskog rashladnog sistema"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div
+            className="absolute inset-y-0 left-0 w-32 lg:w-48"
+            style={{
+              background: "linear-gradient(to right, #1B2669 0%, rgba(27,38,105,0) 100%)",
+            }}
+          />
+        </div>
+
+        {/* Decorative symbol */}
+        <img
+          src={symbolDecorative}
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute left-1/2 top-[44%] hidden w-[280px] -translate-x-1/2 -translate-y-1/2 opacity-90 lg:block"
+        />
+      </div>
+    </section>
+  );
+}
