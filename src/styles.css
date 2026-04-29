@@ -1,8 +1,15 @@
 @import "tailwindcss" source(none);
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap");
 @source "../src";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --color-balticool-bg: #1B2669;
+  --color-balticool-cta: #DCF959;
+}
 
 /*
  * Design system definition.
