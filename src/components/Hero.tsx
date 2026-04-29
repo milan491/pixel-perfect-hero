@@ -34,7 +34,8 @@ export function Hero() {
 
         <a
           href="#kontakt"
-          className="group flex items-center gap-4 self-stretch border-l border-white/15 px-10 py-7 text-[13px] font-semibold tracking-[0.15em] text-white transition-colors hover:bg-white/5"
+          className="group flex items-center gap-4 self-stretch px-10 py-7 text-[13px] font-semibold tracking-[0.15em] text-white transition-opacity hover:opacity-90"
+          style={{ backgroundColor: "#111424" }}
         >
           KONTAKTIRAJTE NAS
           <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
@@ -44,7 +45,7 @@ export function Hero() {
       {/* Main grid */}
       <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,640px)]">
         {/* Left content */}
-        <div className="relative z-10 flex flex-col px-10 pb-20 pt-4 lg:pt-2">
+        <div className="relative z-10 flex min-h-[760px] flex-col px-10 pb-16 pt-4 lg:pt-2">
           {/* Authorized service badge */}
           <div className="flex items-center gap-4">
             <p className="text-[11px] font-medium leading-[1.5] tracking-[0.15em] text-white/85">
@@ -55,8 +56,8 @@ export function Hero() {
           </div>
 
           {/* Headline area */}
-          <div className="mt-32 max-w-[640px]">
-            <h1 className="text-white font-semibold leading-[1.05] tracking-[-0.02em] text-[64px]">
+          <div className="mt-auto max-w-[640px]">
+            <h1 className="text-white font-semibold leading-[1.05] tracking-[-0.02em] text-[58px]">
               Standard pouzdanosti<br />u industrijskom<br />hlađenju
             </h1>
 
@@ -94,12 +95,6 @@ export function Hero() {
             src={heroImage}
             alt="Balticool tehničar pored industrijskog rashladnog sistema"
             className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div
-            className="absolute inset-y-0 left-0 w-32 lg:w-48"
-            style={{
-              background: "linear-gradient(to right, #1B2669 0%, rgba(27,38,105,0) 100%)",
-            }}
           />
         </div>
 
