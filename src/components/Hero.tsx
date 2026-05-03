@@ -108,7 +108,7 @@ export function Hero() {
           src={symbolDecorative}
           alt=""
           aria-hidden="true"
-          className="pointer-events-none absolute right-[670px] top-[-34px] hidden w-[396px] opacity-90 lg:block"
+          className="pointer-events-none absolute right-[612px] top-[-34px] hidden w-[396px] opacity-90 lg:block"
         />
       </div>
     </section>
