@@ -65,8 +65,8 @@ export function Services() {
 
       {/* Row 1: image left, text right */}
       <div className="mt-16 grid grid-cols-1 gap-10 md:mt-24 md:grid-cols-2 md:gap-16">
-        <div className="h-[540px] w-full overflow-hidden">
-          <img src={serviceImage} alt="Servis i održavanje" className="h-full w-full object-cover" />
+        <div className="h-[540px] min-h-[540px] max-h-[540px] w-full overflow-hidden">
+          <img src={serviceImage} alt="Servis i održavanje" className="h-[540px] w-full object-cover" />
         </div>
         <div className="flex h-full flex-col md:h-[540px]">
           <h3 className="text-[28px] font-semibold leading-[1.2] md:text-[32px]" style={{ color: navy }}>
@@ -108,8 +108,8 @@ export function Services() {
             <ReadMore />
           </div>
         </div>
-        <div className="h-[540px] w-full overflow-hidden md:order-2" style={{ backgroundColor: "#E9F0FB" }}>
-          <img src={sparePartsImage} alt="Rezervni delovi" className="h-full w-full object-contain" />
+        <div className="h-[540px] min-h-[540px] max-h-[540px] w-full overflow-hidden md:order-2" style={{ backgroundColor: "#E9F0FB" }}>
+          <img src={sparePartsImage} alt="Rezervni delovi" className="h-[540px] w-full object-contain" />
         </div>
       </div>
     </section>
