@@ -76,7 +76,7 @@ export function Hero() {
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <a
                 href="#ponuda"
-                className="group inline-flex items-center justify-between gap-10 px-7 py-4 text-[14px] font-semibold transition-transform hover:-translate-y-0.5"
+                className="group inline-flex items-center justify-between gap-4 px-7 py-4 text-[14px] font-semibold transition-transform hover:-translate-y-0.5"
                 style={{ backgroundColor: "#DCF959", color: "#1B2669" }}
               >
                 Zatražite ponudu
@@ -85,10 +85,10 @@ export function Hero() {
 
               <a
                 href="#vise"
-                className="group inline-flex items-center justify-between gap-10 border border-white/40 px-7 py-4 text-[14px] font-semibold text-white transition-colors hover:bg-white/5"
+                className="group inline-flex items-center justify-between gap-4 border border-white/40 px-7 py-4 text-[14px] font-semibold text-white transition-colors hover:bg-white/5"
               >
                 Saznajte više
-                <img src={eyeIcon} alt="" className="h-4 w-auto" />
+                <img src={eyeIcon} alt="" className="h-4 w-auto transition-transform group-hover:translate-x-1" />
               </a>
             </div>
           </div>
