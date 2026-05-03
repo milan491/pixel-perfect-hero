@@ -17,7 +17,7 @@ export function Hero() {
       {/* Top bar */}
       <header className="relative z-20 flex h-20 items-center justify-between pl-10 pr-0">
         <a href="/" className="flex h-full items-center">
-          <img src={logoHeader} alt="Balticool" className="h-9 w-auto" />
+          <img src={logoHeader} alt="Balticool" className="h-10 w-auto" />
         </a>
 
         <div className="flex h-full items-center gap-10 ml-auto">
