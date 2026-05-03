@@ -26,7 +26,7 @@ function ReadMore() {
 
 function Bullet({ children }: { children: React.ReactNode }) {
   return (
-    <li className="flex items-center gap-3 text-[15px]" style={{ color: navy }}>
+    <li className="flex items-center gap-3 text-[15px] font-medium" style={{ color: navy }}>
       <img src={checkMark} alt="" className="h-[19px] w-[19px] shrink-0" />
       <span>{children}</span>
     </li>
