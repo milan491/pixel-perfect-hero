@@ -64,11 +64,11 @@ export function Services() {
       </div>
 
       {/* Row 1: image left, text right */}
-      <div className="mt-16 grid grid-cols-1 gap-10 md:mt-24 md:grid-cols-2 md:gap-16 md:items-center">
-        <div className="aspect-[4/3] w-full overflow-hidden">
+      <div className="mt-16 grid grid-cols-1 gap-10 md:mt-24 md:grid-cols-2 md:gap-16">
+        <div className="h-[540px] w-full overflow-hidden">
           <img src={serviceImage} alt="Servis i održavanje" className="h-full w-full object-cover" />
         </div>
-        <div className="flex flex-col">
+        <div className="flex h-full flex-col md:h-[540px]">
           <h3 className="text-[28px] font-semibold leading-[1.2] md:text-[32px]" style={{ color: navy }}>
             Servis i održavanje
           </h3>
@@ -82,15 +82,15 @@ export function Services() {
             <Bullet>Servis HVAC sistema</Bullet>
             <Bullet>Dijagnostika i intervencije</Bullet>
           </ul>
-          <div className="mt-10 md:mt-16 md:self-end">
+          <div className="mt-10 md:mt-auto md:pt-10">
             <ReadMore />
           </div>
         </div>
       </div>
 
       {/* Row 2: text left, image right */}
-      <div className="mt-16 grid grid-cols-1 gap-10 md:mt-24 md:grid-cols-2 md:gap-16 md:items-center">
-        <div className="flex flex-col md:order-1">
+      <div className="mt-16 grid grid-cols-1 gap-10 md:mt-24 md:grid-cols-2 md:gap-16">
+        <div className="flex h-full flex-col md:order-1 md:h-[540px]">
           <h3 className="text-[28px] font-semibold leading-[1.2] md:text-[32px]" style={{ color: navy }}>
             Rezervni delovi
           </h3>
@@ -104,11 +104,11 @@ export function Services() {
             <Bullet>Nabavka tehničkih komponenti</Bullet>
             <Bullet>Konsultacije pri izboru</Bullet>
           </ul>
-          <div className="mt-10 md:mt-16">
+          <div className="mt-10 md:mt-auto md:pt-10">
             <ReadMore />
           </div>
         </div>
-        <div className="aspect-[4/3] w-full overflow-hidden md:order-2" style={{ backgroundColor: "#E9F0FB" }}>
+        <div className="h-[540px] w-full overflow-hidden md:order-2" style={{ backgroundColor: "#E9F0FB" }}>
           <img src={sparePartsImage} alt="Rezervni delovi" className="h-full w-full object-contain" />
         </div>
       </div>
