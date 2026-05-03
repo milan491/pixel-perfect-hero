@@ -4,7 +4,7 @@ const navy = "#1B2669";
 
 export function TechSupport() {
   return (
-    <section className="w-full bg-white">
+    <section className="w-full bg-white pl-[30px]">
       <div className="relative w-full">
         <img
           src={hvacImage}
