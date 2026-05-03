@@ -42,6 +42,9 @@ export function Hero() {
         </a>
       </header>
 
+      {/* Divider */}
+      <div className="relative z-20 h-px w-full" style={{ backgroundColor: "#434F97" }} />
+
       {/* Main grid */}
       <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,640px)]">
         {/* Left content */}
