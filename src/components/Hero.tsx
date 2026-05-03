@@ -85,7 +85,7 @@ export function Hero() {
 
               <a
                 href="#vise"
-                className="group inline-flex items-center justify-between gap-4 border border-white/40 px-7 py-4 text-[14px] font-semibold text-white transition-colors hover:bg-white/5"
+                className="group inline-flex items-center justify-between gap-4 border border-white/40 px-7 py-4 text-[14px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/5"
               >
                 Saznajte više
                 <img src={eyeIcon} alt="" className="h-4 w-auto transition-transform group-hover:translate-x-1" />
