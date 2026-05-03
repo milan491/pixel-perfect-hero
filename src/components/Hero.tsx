@@ -15,31 +15,33 @@ export function Hero() {
       style={{ backgroundColor: "#1B2669" }}
     >
       {/* Top bar */}
-      <header className="relative z-20 flex items-center justify-between pl-10 pr-0">
-        <a href="/" className="py-7">
+      <header className="relative z-20 flex h-20 items-center justify-between pl-10 pr-0">
+        <a href="/" className="flex h-full items-center">
           <img src={logoHeader} alt="Balticool" className="h-9 w-auto" />
         </a>
 
-        <nav className="hidden items-center gap-10 lg:flex">
-          {navItems.map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="text-[13px] font-medium tracking-[0.15em] text-white/90 transition-colors hover:text-[#DCF959]"
-            >
-              {item}
-            </a>
-          ))}
-        </nav>
+        <div className="flex h-full items-center gap-10 ml-auto">
+          <nav className="hidden items-center gap-10 lg:flex">
+            {navItems.map((item) => (
+              <a
+                key={item}
+                href="#"
+                className="text-[13px] font-light tracking-[0.15em] text-white/90 transition-colors hover:text-[#DCF959]"
+              >
+                {item}
+              </a>
+            ))}
+          </nav>
 
-        <a
-          href="#kontakt"
-          className="group flex items-center gap-4 self-stretch px-10 py-7 text-[13px] font-semibold tracking-[0.15em] text-white transition-opacity hover:opacity-90"
-          style={{ backgroundColor: "#111424" }}
-        >
-          KONTAKTIRAJTE NAS
-          <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
-        </a>
+          <a
+            href="#kontakt"
+            className="group flex h-full items-center gap-4 px-10 text-[13px] font-semibold tracking-[0.15em] text-white transition-opacity hover:opacity-90"
+            style={{ backgroundColor: "#111424" }}
+          >
+            KONTAKTIRAJTE NAS
+            <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
+          </a>
+        </div>
       </header>
 
       {/* Divider */}
