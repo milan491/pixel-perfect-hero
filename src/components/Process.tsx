@@ -36,7 +36,7 @@ const steps = [
 
 export function Process() {
   return (
-    <section className="w-full bg-[#E8F0FE] px-6 py-[80px] md:px-10 md:py-[100px]">
+    <section className="w-full bg-[#E8F0FE] px-[30px] py-[80px] md:py-[100px]">
       <div className="mx-auto max-w-[1400px]">
         <p
           className="text-[15px] tracking-[0.25em]"
