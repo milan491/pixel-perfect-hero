@@ -35,11 +35,11 @@ function Bullet({ children }: { children: React.ReactNode }) {
 
 export function Services() {
   return (
-    <section className="w-full bg-white px-6 py-20 md:px-10 md:py-28">
+    <section className="w-full bg-white px-6 py-[60px] md:px-10 md:py-[60px]">
       {/* Header */}
       <div className="relative">
         <p
-          className="text-[11px] tracking-[0.25em]"
+          className="text-[15px] tracking-[0.25em]"
           style={{ color: navy, fontFamily: '"Roboto Mono", ui-monospace, monospace', fontWeight: 500 }}
         >
           STRUČNA REŠENJA
