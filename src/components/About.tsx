@@ -29,7 +29,7 @@ export function About() {
     <section className="w-full bg-white px-6 py-[80px] md:px-10 md:py-[112px]">
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
         {/* Left column */}
-        <div className="flex flex-col">
+        <div className="flex flex-col self-start md:sticky md:top-0 md:max-h-screen md:pb-[50px]">
           <p
             className="text-[15px] tracking-[0.25em]"
             style={{ color: navy, fontFamily: '"Roboto Mono", ui-monospace, monospace', fontWeight: 500 }}
