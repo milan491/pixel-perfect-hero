@@ -50,7 +50,7 @@ export function Hero() {
       {/* Main grid */}
       <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,640px)]">
         {/* Left content */}
-        <div className="relative z-10 flex min-h-[760px] flex-col px-10 pb-16 pt-4 lg:pt-2">
+        <div className="relative z-10 flex min-h-[760px] flex-col px-10 pb-10 pt-10">
           {/* Authorized service badge */}
           <div className="flex items-center gap-4">
             <p className="text-[11px] font-medium leading-[1.5] tracking-[0.15em] text-white/85">
