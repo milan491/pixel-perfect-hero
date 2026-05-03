@@ -53,7 +53,7 @@ export function Hero() {
         <div className="relative z-10 flex min-h-[760px] flex-col px-10 pb-10 pt-10">
           {/* Authorized service badge */}
           <div className="flex items-center gap-4">
-            <p className="text-[11px] font-medium leading-[1.5] tracking-[0.15em] text-white/85">
+            <p className="text-[11px] leading-[1.5] tracking-[0.15em] text-white/85" style={{ fontFamily: '"Roboto Mono", ui-monospace, monospace', fontWeight: 500 }}>
               OVLAŠĆENI SERVIS<br />BALTIMORE AIRCOIL<br />&amp; SABIANA
             </p>
             <img src={bacLogo} alt="Baltimore Aircoil" className="h-11 w-11" />
