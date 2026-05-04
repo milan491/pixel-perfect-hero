@@ -90,7 +90,7 @@ export function Hero() {
       {/* Main grid */}
       <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,640px)]">
         {/* Left content */}
-        <div className="relative z-10 flex min-h-[760px] flex-col px-[15px] pb-10 pt-10 md:px-10">
+        <div className="relative z-10 flex flex-col px-[15px] pb-[30px] pt-10 md:min-h-[760px] md:px-10 md:pb-10">
           {/* Authorized service badge */}
           <div className="flex items-center gap-4">
             <p className="text-[11px] leading-[1.5] tracking-[0.15em] text-white/85" style={{ fontFamily: '"Roboto Mono", ui-monospace, monospace', fontWeight: 500 }}>
