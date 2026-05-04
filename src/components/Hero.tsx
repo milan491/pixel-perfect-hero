@@ -19,7 +19,7 @@ export function Hero() {
       style={{ backgroundColor: "#1B2669" }}
     >
       {/* Top bar */}
-      <header className="relative z-20 flex h-20 items-center justify-between pl-10 pr-0">
+      <header className="relative z-20 flex h-20 items-center justify-between pl-[15px] pr-0 md:pl-10">
         <a href="/" className="flex h-full items-center">
           <img src={logoHeader} alt="Balticool" className="h-10 w-auto" />
         </a>
@@ -62,7 +62,7 @@ export function Hero() {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="relative z-20 lg:hidden" style={{ backgroundColor: "#111424" }}>
-          <nav className="flex flex-col px-10 py-6">
+          <nav className="flex flex-col px-[15px] py-6 md:px-10">
             {navItems.map((item) => (
               <a
                 key={item}
@@ -90,7 +90,7 @@ export function Hero() {
       {/* Main grid */}
       <div className="relative grid grid-cols-1 lg:grid-cols-[1fr_minmax(0,640px)]">
         {/* Left content */}
-        <div className="relative z-10 flex min-h-[760px] flex-col px-10 pb-10 pt-10">
+        <div className="relative z-10 flex min-h-[760px] flex-col px-[15px] pb-10 pt-10 md:px-10">
           {/* Authorized service badge */}
           <div className="flex items-center gap-4">
             <p className="text-[11px] leading-[1.5] tracking-[0.15em] text-white/85" style={{ fontFamily: '"Roboto Mono", ui-monospace, monospace', fontWeight: 500 }}>
@@ -102,7 +102,7 @@ export function Hero() {
 
           {/* Headline area */}
           <div className="mt-auto max-w-[640px]">
-            <h1 className="text-white font-semibold leading-[1.05] tracking-[-0.02em] text-[58px]">
+            <h1 className="text-white font-semibold tracking-[-0.02em] text-[30px] leading-[40px] md:text-[58px] md:leading-[1.05]">
               Standard pouzdanosti<br />u industrijskom<br />hlađenju
             </h1>
 
