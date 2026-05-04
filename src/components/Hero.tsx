@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 import logoHeader from "@/assets/logo_header.svg";
 import bacLogo from "@/assets/bac_logo.png";
 import sabianaLogo from "@/assets/sabiana_logo.png";
@@ -9,6 +11,8 @@ import heroImage from "@/assets/hero_technician.jpg";
 const navItems = ["USLUGE", "BRENDOVI", "O NAMA", "KLIJENTI", "GALERIJA"];
 
 export function Hero() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <section
       className="relative min-h-screen w-full overflow-hidden font-sans text-white"
@@ -35,14 +39,50 @@ export function Hero() {
 
           <a
             href="#kontakt"
-            className="group flex h-full items-center gap-4 px-10 text-[13px] font-semibold tracking-[0.15em] text-white transition-opacity hover:opacity-90"
+            className="group hidden h-full items-center gap-4 px-10 text-[13px] font-semibold tracking-[0.15em] text-white transition-opacity hover:opacity-90 md:flex"
             style={{ backgroundColor: "#111424" }}
           >
             KONTAKTIRAJTE NAS
             <span className="inline-block transition-transform group-hover:translate-x-1">→</span>
           </a>
+
+          <button
+            type="button"
+            aria-label="Otvori meni"
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((v) => !v)}
+            className="flex h-20 w-20 items-center justify-center text-white md:hidden"
+            style={{ backgroundColor: "#111424" }}
+          >
+            {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
         </div>
       </header>
+
+      {/* Mobile menu */}
+      {menuOpen && (
+        <div className="relative z-20 lg:hidden" style={{ backgroundColor: "#111424" }}>
+          <nav className="flex flex-col px-10 py-6">
+            {navItems.map((item) => (
+              <a
+                key={item}
+                href="#"
+                onClick={() => setMenuOpen(false)}
+                className="py-3 text-[13px] font-light tracking-[0.15em] text-white/90 transition-colors hover:text-[#DCF959]"
+              >
+                {item}
+              </a>
+            ))}
+            <a
+              href="#kontakt"
+              onClick={() => setMenuOpen(false)}
+              className="mt-4 inline-flex items-center gap-3 py-3 text-[13px] font-semibold tracking-[0.15em] text-white md:hidden"
+            >
+              KONTAKTIRAJTE NAS <span>→</span>
+            </a>
+          </nav>
+        </div>
+      )}
 
       {/* Divider */}
       <div className="relative z-20 h-px w-full" style={{ backgroundColor: "#434F97" }} />
