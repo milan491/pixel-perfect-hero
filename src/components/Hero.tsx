@@ -101,7 +101,7 @@ export function Hero() {
           </div>
 
           {/* Headline area */}
-          <div className="mt-auto max-w-[640px]">
+          <div className="mt-[60px] max-w-[640px] md:mt-auto">
             <h1 className="text-white font-semibold tracking-[-0.02em] text-[30px] leading-[40px] md:text-[58px] md:leading-[1.05]">
               Standard pouzdanosti<br />u industrijskom<br />hlađenju
             </h1>
@@ -113,10 +113,10 @@ export function Hero() {
             </p>
 
             {/* CTAs */}
-            <div className="mt-10 flex flex-wrap items-center gap-4">
+            <div className="mt-10 flex flex-col items-stretch gap-4 md:flex-row md:flex-wrap md:items-center">
               <a
                 href="#ponuda"
-                className="group inline-flex items-center justify-between gap-4 px-7 py-4 text-[14px] font-semibold transition-transform hover:-translate-y-0.5"
+                className="group inline-flex w-full items-center justify-center gap-4 px-7 py-4 text-[14px] font-semibold transition-transform hover:-translate-y-0.5 md:w-auto md:justify-between"
                 style={{ backgroundColor: "#DCF959", color: "#1B2669" }}
               >
                 Zatražite ponudu
@@ -125,7 +125,7 @@ export function Hero() {
 
               <a
                 href="#vise"
-                className="group inline-flex items-center justify-between gap-4 border border-white/40 px-7 py-4 text-[14px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/5"
+                className="group inline-flex w-full items-center justify-center gap-4 border border-white/40 px-7 py-4 text-[14px] font-semibold text-white transition-all hover:-translate-y-0.5 hover:bg-white/5 md:w-auto md:justify-between"
               >
                 Saznajte više
                 <img src={eyeIcon} alt="" className="h-4 w-auto transition-transform group-hover:translate-x-1" />
