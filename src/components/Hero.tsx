@@ -19,6 +19,7 @@ export function Hero() {
       className="relative min-h-screen w-full overflow-hidden font-sans text-white"
       style={{ backgroundColor: "#1B2669" }}
     >
+      <BackgroundPaths />
       {/* Top bar */}
       <header className="relative z-20 flex h-20 items-center justify-between pl-[15px] pr-0 md:pl-10">
         <a href="/" className="flex h-full items-center">
