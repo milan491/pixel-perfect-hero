@@ -3,6 +3,7 @@ import stepTerenska from "@/assets/step_terenska.jpg";
 import stepRealizacija from "@/assets/step_realizacija.jpg";
 import stepPracenje from "@/assets/step_pracenje.jpg";
 import checkMark from "@/assets/check_mark_standard.svg";
+import { BackgroundPaths } from "@/components/ui/background-paths";
 
 const navy = "#1B2669";
 const lineColor = "#BCD3FF";
