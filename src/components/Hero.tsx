@@ -7,6 +7,7 @@ import symbolDecorative from "@/assets/symbol_decorative.svg";
 import buttonArrow from "@/assets/button_arrow.svg";
 import eyeIcon from "@/assets/eye_icon.svg";
 import heroImage from "@/assets/hero_technician.jpg";
+import { BackgroundPaths } from "@/components/ui/background-paths";
 
 const navItems = ["USLUGE", "BRENDOVI", "O NAMA", "KLIJENTI", "GALERIJA"];
 
@@ -18,6 +19,7 @@ export function Hero() {
       className="relative min-h-screen w-full overflow-hidden font-sans text-white"
       style={{ backgroundColor: "#1B2669" }}
     >
+      <BackgroundPaths />
       {/* Top bar */}
       <header className="relative z-20 flex h-20 items-center justify-between pl-[15px] pr-0 md:pl-10">
         <a href="/" className="flex h-full items-center">
