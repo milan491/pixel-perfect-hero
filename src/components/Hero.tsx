@@ -7,6 +7,7 @@ import symbolDecorative from "@/assets/symbol_decorative.svg";
 import buttonArrow from "@/assets/button_arrow.svg";
 import eyeIcon from "@/assets/eye_icon.svg";
 import heroImage from "@/assets/hero_technician.jpg";
+import { BackgroundPaths } from "@/components/ui/background-paths";
 
 const navItems = ["USLUGE", "BRENDOVI", "O NAMA", "KLIJENTI", "GALERIJA"];
 
