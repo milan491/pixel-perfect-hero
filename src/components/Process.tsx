@@ -3,6 +3,7 @@ import stepTerenska from "@/assets/step_terenska.jpg";
 import stepRealizacija from "@/assets/step_realizacija.jpg";
 import stepPracenje from "@/assets/step_pracenje.jpg";
 import checkMark from "@/assets/check_mark_standard.svg";
+import { BackgroundPaths } from "@/components/ui/background-paths";
 
 const navy = "#1B2669";
 const lineColor = "#BCD3FF";
@@ -36,8 +37,9 @@ const steps = [
 
 export function Process() {
   return (
-    <section className="w-full bg-[#E8F0FE] p-[30px]">
-      <div className="w-full">
+    <section className="relative w-full overflow-hidden bg-[#E8F0FE] p-[30px]">
+      <BackgroundPaths />
+      <div className="relative z-10 w-full">
         <p
           className="text-[15px] tracking-[0.25em]"
           style={{ color: navy, fontFamily: '"Roboto Mono", ui-monospace, monospace', fontWeight: 500 }}
