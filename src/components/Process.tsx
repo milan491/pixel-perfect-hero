@@ -37,8 +37,9 @@ const steps = [
 
 export function Process() {
   return (
-    <section className="w-full bg-[#E8F0FE] p-[30px]">
-      <div className="w-full">
+    <section className="relative w-full overflow-hidden bg-[#E8F0FE] p-[30px]">
+      <BackgroundPaths />
+      <div className="relative z-10 w-full">
         <p
           className="text-[15px] tracking-[0.25em]"
           style={{ color: navy, fontFamily: '"Roboto Mono", ui-monospace, monospace', fontWeight: 500 }}
